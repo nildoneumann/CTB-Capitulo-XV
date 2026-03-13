@@ -1,6 +1,7 @@
 const CACHE_NAME = "ctb-cache-v1";
 const FILES_TO_CACHE = [
   "index.html",
+  "BUSCA CTB Artigo 181.html",
   "manifest.json",
   "icon-192.png",
   "icon-512.png"
@@ -30,3 +31,4 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then((resp) => resp || fetch(event.request))
   );
 });
+
